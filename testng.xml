@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Gmail Automation Suite">
+    <test name="Delete Email Test">
+        <classes>
+            <class name="com.chromer.GmailDeleteTest"/>
+        </classes>
+    </test>
+</suite>
