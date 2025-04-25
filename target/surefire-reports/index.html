@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Gmail_Automation_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Gmail Automation Suite</span>
+              <span class="suite-name border-passed">Gmail Automation Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Gmail_Automation_Suite" class="hide-methods failed suite-Gmail_Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-Gmail_Automation_Suite -->
-                      <a href="#" panel-name="suite-Gmail_Automation_Suite" class="show-methods failed suite-Gmail_Automation_Suite"> (show)</a> <!-- show-methods failed suite-Gmail_Automation_Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Gmail_Automation_Suite" class="hide-methods passed suite-Gmail_Automation_Suite"> (hide)</a> <!-- hide-methods passed suite-Gmail_Automation_Suite -->
+                      <a href="#" panel-name="suite-Gmail_Automation_Suite" class="show-methods passed suite-Gmail_Automation_Suite"> (show)</a> <!-- show-methods passed suite-Gmail_Automation_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Gmail_Automation_Suite">
+                    <div class="method-list-content passed suite-Gmail_Automation_Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Gmail_Automation_Suite" title="com.chromer.GmailDeleteTest" class="method navigator-link" hash-for-method="deleteEmailFromGmail">deleteEmailFromGmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Gmail_Automation_Suite -->
+                    </div> <!-- method-list-content passed suite-Gmail_Automation_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,9 +118,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Gmail_Automation_Suite" class="panel Gmail_Automation_Suite">
-          <div class="suite-Gmail_Automation_Suite-class-failed">
+          <div class="suite-Gmail_Automation_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.chromer.GmailDeleteTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,35 +129,10 @@
                   <a name="deleteEmailFromGmail">
                   </a> <!-- deleteEmailFromGmail -->
                   <span class="method-name">deleteEmailFromGmail</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;4.31.0&apos;, revision: &apos;1ef9f18787*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [048b17fd50bd59ccec4dc5b1d44c414e, findElement {using=css selector, value=tr.zA}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 135.0.7049.115 (e624ba5948f..., userDataDir: C:\Users\MARVIN~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53608}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53608/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 048b17fd50bd59ccec4dc5b1d44c414e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at com.chromer.GmailDeleteTest.deleteEmailFromGmail(GmailDeleteTest.java:72)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Gmail_Automation_Suite-class-failed -->
+          </div> <!-- suite-Gmail_Automation_Suite-class-passed -->
         </div> <!-- panel Gmail_Automation_Suite -->
         <div panel-name="test-xml-Gmail_Automation_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -214,12 +189,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'deleteEmailFromGmail')
 data.setCell(0, 2, 'com.chromer.GmailDeleteTest')
-data.setCell(0, 3, 15363);
+data.setCell(0, 3, 24593);
 window.suiteTableData['Gmail_Automation_Suite']= { tableData: data, tableDiv: 'times-div-Gmail_Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Gmail_Automation_Suite">
               </div> <!-- times-div-Gmail_Automation_Suite -->
             </div> <!-- times-div -->
@@ -251,14 +226,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">deleteEmailFromGmail</span>
-                <span class="method-start">1024 ms</span>
+                <span class="method-start">995 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16392 ms</span>
+                <span class="method-start">25590 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -35,7 +35,7 @@ public class GmailDeleteTest {
         options.addArguments("--disable-dev-shm-usage");
 
         System.setProperty("webdriver.chrome.driver", "D:/chromedriver-win64/chromedriver.exe");
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
     }
